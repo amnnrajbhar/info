@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Rajbhar | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFA726, #FF7043); /* Orange gradient background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 1s ease;
+        }
+        header h1 {
+            margin: 0;
+            color: white; /* White text color */
+            font-size: 3em;
+        }
+        header p {
+            margin: 5px 0;
+            color: white; /* White text color */
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-info p {
+            color: white;
+            margin: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info p:not(:last-child):after {
+            content: "|";
+            margin-left: 10px;
+            margin-right: 10px;
+            color: white;
+        }
+        .contact-info i {
+            color: black; /* Orange color */
+            margin-right: 10px;
+        }
+        .card {
+            background: white; /* White card background */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease;
+        }
+        .card h2 {
+            color: #FFA726; /* Orange color */
+            text-align: center;
+            margin-top: 0;
+        }
+        .skills li, .projects li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: linear-gradient(135deg, #FFA726, #FF7043); /* Same gradient as background */
+            color: white;
+            animation: slideInUp 1s ease;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .contact-info p {
+                margin: 5px 5px;
+            }
+            .contact-info p:not(:last-child):after {
+                display: none;
+            }
+            .card {
+                padding: 15px;
+            }
+            footer {
+                padding: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aman Rajbhar</h1>
+            <p>Software Engineer</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:amnnrajbhar@gmail.com">amnnrajbhar@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:7304236208">7304236208</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Mumbai,%20India" target="_blank">Mumbai, India</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/amnn-rajbhar" target="_blank">Amnn Rajbhar | Angular | MVC</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/amnnrajbhar" target="_blank">amnnrajbhar</a></p>
+            </div>
+        </header>
+        <div class="card">
+            <h2>Education 🎓</h2>
+            <p>University of Mumbai, Bsc In Computer Science (Jun 2019 – May 2021)</p>
+            <p>IGNOU, MCA In Computer Application (June 2022 - Present)</p>
+        </div>
+        <div class="card">
+            <h2>Professional Experience 💼</h2>
+            <p><strong>Benchmark Computer Solutions Limited, Jr. Software Developer (Aug 2022 – Present)</strong></p>
+            <ul>
+                <li>Contributed to web applications development using Angular, MVC, and C#.</li>
+                <li>Managed multiple projects simultaneously with effective task prioritization and time management.</li>
+                <li>Collaborated with senior developers on front-end and back-end features.</li>
+                <li>Worked with MySQL databases for data management and performance optimization.</li>
+                <li>Enhanced problem-solving skills and deepened understanding of software development best practices.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Skills 🛠️</h2>
+            <ul class="skills">
+                <li><strong>JavaScript:</strong> Proficient in writing clean and efficient code for interactive user interfaces.</li>
+                <li><strong>Angular:</strong> Skilled in developing front-end applications using Angular framework.</li>
+                <li><strong>MVC:</strong> Familiarity with MVC architecture for maintainable and scalable web applications.</li>
+                <li><strong>MySQL:</strong> Competent in data manipulation, querying, and performance optimization.</li>
+                <li><strong>Project Management:</strong> Ability to manage multiple projects, prioritize tasks, and meet deadlines.</li>
+                <li><strong>Time Management:</strong> Efficiently managed time and resources to handle multiple tasks.</li>
+                <li><strong>Continuous Learning:</strong> Passionate about learning new technologies and staying updated with trends.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Projects 📚</h2>
+            <ul class="projects">
+                <li><strong>Online Book Store:</strong> An online book ordering website using HTML, CSS, and XAMPP (Oct 2021 – Nov 2021).</li>
+                <li><strong>StyleHub:</strong> A salon appointment booking app using Android Studio, Firebase, and Razorpay (Sep 2020 – Jan 2021).</li>
+                <li><strong>Snake Game:</strong> A Snake Game web app using Angular (Apr 2022 – Apr 2022).</li>
+                <li><strong>json-language-translator:</strong> A script using Python to convert JSON values to any targeted language (Jun 2022 – Jun 2022).</li>
+                <li><strong>Calculator:</strong> A web app using Angular with features to calculate GST and percentages (Dec 2022 – Jan 2023).</li>
+                <li><strong>Portfolio:</strong> A fully responsive website built using Angular (Jan 2023 – present).</li>
+				<li><strong>Tic Tac Tie:</strong> A fully responsive Tic Tac Tie Game Using Single File With The Help Of Html,Css And Javascript (Jan 2023 – present).</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aman Rajbhar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
