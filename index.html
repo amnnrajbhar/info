@@ -1,284 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Rajbhar | Portfolio</title>
-    <meta name="description"
-        content="Aman Rajbhar, a talented Junior Software Developer, showcases his expertise in Angular, ASP.NET, MVC, and more. Explore his portfolio and projects.">
-    <meta name="keywords" content="Aman Rajbhar, Software Developer, Angular, ASP.NET, MVC, Portfolio, Projects">
+    <meta
+      name="description"
+      content="Aman Rajbhar, a talented Junior Software Developer, showcases his expertise in Angular, ASP.NET, MVC, and more. Explore his portfolio and projects."
+    />
+    <meta
+      name="keywords"
+      content="Aman Rajbhar, Software Developer, Angular, ASP.NET, MVC, Portfolio, Projects"
+    />
 
     <!-- Open Graph Meta Tags for better social media sharing -->
-    <meta property="og:title" content="Aman Rajbhar | Portfolio">
-    <meta property="og:description"
-        content="Explore the portfolio of Aman Rajbhar, a skilled Junior Software Developer with expertise in Angular, ASP.NET, MVC, and more.">
-    <meta property="og:image" content="https://amnnrajbhar.github.io/info/me.jpeg">
+    <meta property="og:title" content="Aman Rajbhar | Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Aman Rajbhar, a skilled Junior Software Developer with expertise in Angular, ASP.NET, MVC, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://amnnrajbhar.github.io/info/me.jpeg"
+    />
     <!-- Replace with your actual image URL -->
-    <meta property="og:url" content="https://amnnrajbhar.github.io/info/">
-    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amnnrajbhar.github.io/info/" />
+    <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Aman Rajbhar | Portfolio">
-    <meta name="twitter:description"
-        content="Explore the portfolio of Aman Rajbhar, a skilled Junior Software Developer with expertise in Angular, ASP.NET, MVC, and more.">
-    <meta name="twitter:image" content="https://amnnrajbhar.github.io/info/me.jpeg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aman Rajbhar | Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of Aman Rajbhar, a skilled Junior Software Developer with expertise in Angular, ASP.NET, MVC, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://amnnrajbhar.github.io/info/me.jpeg"
+    />
     <!-- Replace with your actual image URL -->
 
     <!-- Favicon -->
-    <link rel="icon" href="https://amnnrajbhar.github.io/info/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon1.ico" />
 
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-    <!-- Styles -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #FFA726, #FF7043);
-            /* Orange gradient background */
-            color: #333;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+    <link rel="stylesheet" href="styles.css">
+   
+  </head>
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0;
-            animation: fadeIn 1s ease;
-        }
-
-        header h1 {
-            margin: 0;
-            color: white;
-            /* White text color */
-            font-size: 3em;
-        }
-
-        header p {
-            margin: 5px 0;
-            color: white;
-            /* White text color */
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contact-info p {
-            color: white;
-            margin: 5px 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        .contact-info p:not(:last-child):after {
-            content: "|";
-            margin-left: 10px;
-            margin-right: 10px;
-            color: white;
-        }
-
-        .contact-info i {
-            color: black;
-            /* Orange color */
-            margin-right: 10px;
-        }
-
-        .card {
-            background: white;
-            /* White card background */
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            animation: slideInUp 1s ease;
-        }
-
-        .card h2 {
-            color: #FFA726;
-            /* Orange color */
-            text-align: center;
-            margin-top: 0;
-        }
-
-        .skills li,
-        .projects li {
-            margin: 10px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: linear-gradient(135deg, #FFA726, #FF7043);
-            /* Same gradient as background */
-            color: white;
-            animation: slideInUp 1s ease;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideInUp {
-            0% {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* Media Query for Mobile Devices */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-
-            header h1 {
-                font-size: 2em;
-            }
-
-            .contact-info p {
-                margin: 5px 5px;
-            }
-
-            .contact-info p:not(:last-child):after {
-                display: none;
-            }
-
-            .card {
-                padding: 15px;
-            }
-
-            footer {
-                padding: 15px 0;
-            }
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <header>
-            <h1>Aman Rajbhar</h1>
-            <p>Software Engineer</p>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:amnnrajbhar@gmail.com">amnnrajbhar@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> <a href="tel:7304236208">7304236208</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=Mumbai,%20India"
-                        target="_blank">Mumbai, India</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/amnn-rajbhar" target="_blank">Amnn
-                        Rajbhar | Angular | MVC</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/amnnrajbhar"
-                        target="_blank">amnnrajbhar</a></p>
-                <p><i class="fas fa-file-alt"></i> <a href="https://amnnrajbhar.tiiny.site" target="_blank">Resume</a>
-                </p>
-            </div>
-        </header>
-        <div class="card">
-            <h2>Education 🎓</h2>
-            <p>University of Mumbai, Bsc In Computer Science (Jun 2019 – May 2022)</p>
-            <p>IGNOU, MCA In Computer Application (June 2022 - Present)</p>
+      <header>
+        <h1>Aman Rajbhar</h1>
+        <p>Software Engineer</p>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:amnnrajbhar@gmail.com">amnnrajbhar@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> <a href="tel:7304236208">7304236208</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://maps.google.com/?q=Mumbai,%20India" target="_blank"
+              >Mumbai, India</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/amnn-rajbhar" target="_blank"
+              >Amnn Rajbhar | Angular | MVC</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/amnnrajbhar" target="_blank"
+              >amnnrajbhar</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-file-alt"></i>
+            <a href="https://amnnrajbhar.tiiny.site" target="_blank">Resume</a>
+          </p>
         </div>
-        <div class="card">
-            <h2>Professional Experience 💼</h2>
-            <p><strong>&nbsp  &nbsp &nbsp  &nbsp Junior Software Developer at Benchmark Computer Solutions Limited (Aug 2022 – Present)</strong></p>
-            <ul>
-                <li><strong>Developed and optimized web applications:</strong> Leveraged Angular, JavaScript, MVC, and ASP.NET to ensure robust performance and responsiveness across diverse projects.</li>
-                <li><strong>Collaborated with cross-functional teams:</strong> Worked closely with teams to design, implement, and deliver new features, significantly enhancing user experience and functionality.</li>
-                <li><strong>Diagnosed and resolved critical bugs:</strong> Identified and fixed bugs in existing applications, improving stability and user satisfaction through rigorous debugging and testing.</li>
-                <li><strong>Adhered to software development best practices:</strong> Ensured high-quality, maintainable code through comprehensive code reviews, version control, and detailed documentation.</li>
-                <li><strong>Managed configuration and version control:</strong> Oversaw configuration management and version control for over 12 projects across 4 teams, maintaining consistency and reliability throughout the development lifecycle.</li>
-            </ul>
+      </header>
+      <div class="card education-card">
+        <h2>Education 🎓</h2>
+        
+        <div class="education-entry">
+            <div class="education-header">
+                <i class="fas fa-university icon"></i>
+                <h3>University of Mumbai</h3>
+            </div>
+            <p>B.Sc. in Computer Science</p>
+            <span class="education-date">Jun 2019 – May 2022</span>
         </div>
         
-        <div class="card">
-            <h2>Skills 🛠️</h2>
-            <ul class="skills">
-                <li><strong>JavaScript:</strong> Proficient in writing clean and efficient code for interactive user
-                    interfaces.</li>
-                <li><strong>Angular:</strong> Skilled in developing front-end applications using Angular framework.</li>
-                <li><strong>MVC:</strong> Familiarity with MVC architecture for maintainable and scalable web
-                    applications.</li>
-                <li><strong>MySQL:</strong> Competent in data manipulation, querying, and performance optimization.</li>
-                <li><strong>Project Management:</strong> Ability to manage multiple projects, prioritize tasks, and meet
-                    deadlines.</li>
-                <li><strong>Time Management:</strong> Efficiently managed time and resources to handle multiple tasks.
-                </li>
-                <li><strong>Continuous Learning:</strong> Passionate about learning new technologies and staying updated
-                    with trends.</li>
-            </ul>
+        <div class="education-entry">
+            <div class="education-header">
+                <i class="fas fa-graduation-cap icon"></i>
+                <h3>IGNOU</h3>
+            </div>
+            <p>MCA in Computer Application</p>
+            <span class="education-date">June 2022 – Present</span>
         </div>
-        <div class="card">
-            <h2>Projects 📚</h2>
-            <ul class="projects">
-                <li><strong>Online Book Store:</strong> An online book ordering website using HTML, CSS, and XAMPP (Oct
-                    2021 – Nov 2021).</li>
-                <li><strong>StyleHub:</strong> A salon appointment booking app using Android Studio, Firebase, and
-                    Razorpay (Sep 2020 – Jan 2021).</li>
-                <li><strong>Snake Game:</strong> A Snake Game web app using Angular (Apr 2022 – Apr 2022).</li>
-                <li><strong>json-language-translator:</strong> A script using Python to convert JSON values to any
-                    targeted language (Jun 2022 – Jun 2022).</li>
-                <li><strong>Calculator:</strong> A web app using Angular with features to calculate GST and percentages
-                    (Dec 2022 – Jan 2023).</li>
-                <li><strong>Portfolio:</strong> A fully responsive website built using Angular (Jan 2023 – present).
-                </li>
-                <li><strong><a href="https://amnnrajbhar.github.io/tictactie/" target="_blank" style="color: #333;">Tic
-                            Tac Toe:</a></strong> A fully responsive Tic Tac Toe game using a single file with the help
-                    of HTML, CSS, and JavaScript (Jan 2024 – Jan 2024).</li>
-                <li><strong><a href="https://amnnrajbhar.github.io/TvService/" target="_blank" style="color: #333;">TV
-                            Services:</a></strong> An attractive, responsive website for a TV service provider with
-                    service listings, Google Maps integration, and streamlined booking and contact options. (June 2024 –
-                    June 2024).</li>
-                <li><strong><a href="https://amnnrajbhar.github.io/Invoicegenerator/" target="_blank"
-                            style="color: #333;">Invoice Generator:</a></strong> A React-based Invoice Generator that
-                    allows users to create and download invoices as PDF files with a fully responsive and centered
-                    design. (Aug 2024 – Aug 2024).</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h2>Certifications 🎓</h2>
-            <ul class="projects">
-                <li><strong>Advanced Angular:</strong> Certified in advanced Angular development through Great Learning
-                </li>
-                <li><strong>ASP.NET MVC Development:</strong> Proficient in building web applications with ASP.NET MVC
-                </li>
-            </ul>
-        </div>
-        <footer>
-            <p>&copy; 2024 Aman Rajbhar. All Rights Reserved.</p>
-        </footer>
     </div>
-</body>
-
+    
+    
+    <div class="card experience-card">
+        <h2>Professional Experience 💼</h2>
+    
+        <div class="experience-container">
+            <!-- Job 1 -->
+            <div class="job-entry">
+                <div class="job-header">
+                    <div class="job-info">
+                        <i class="fas fa-building icon"></i>
+                        <h3>Software Engineer</h3>
+                    </div>
+                    <p class="company">Clover Infotech Private Limited</p>
+                    <span class="job-date">
+                        <i class="fas fa-calendar-alt"></i> Dec 2024 – Present
+                    </span>
+                </div>
+                <ul class="job-details">
+                    <li><i class="fas fa-code"></i> Developed high-performance web applications using <strong>Angular, TypeScript, RxJS</strong>.</li>
+                    <li><i class="fas fa-server"></i> Designed and implemented <strong>scalable microservices & REST APIs</strong>.</li>
+                    <li><i class="fas fa-tachometer-alt"></i> Optimized app performance, reducing load time by <strong>70%</strong>.</li>
+                    <li><i class="fas fa-paint-brush"></i> Enhanced UI/UX with <strong>Material UI, CSS3, and JavaScript</strong>.</li>
+                </ul>
+            </div>
+    
+            <!-- Job 2 -->
+            <div class="job-entry">
+                <div class="job-header">
+                    <div class="job-info">
+                        <i class="fas fa-building icon"></i>
+                        <h3>Junior Software Developer</h3>
+                    </div>
+                    <p class="company">Benchmark Computer Solutions Limited</p>
+                    <span class="job-date">
+                        <i class="fas fa-calendar-alt"></i> Aug 2022 – Dec 2024
+                    </span>
+                </div>
+                <ul class="job-details">
+                    <li><i class="fas fa-laptop-code"></i> Built dynamic web apps using <strong>Angular, ASP.NET, and MVC</strong>.</li>
+                    <li><i class="fas fa-users"></i> Worked closely with cross-functional teams to develop new features.</li>
+                    <li><i class="fas fa-bug"></i> Diagnosed and resolved critical bugs, ensuring application stability.</li>
+                    <li><i class="fas fa-cogs"></i> Managed version control across <strong>12+ projects</strong> using Git & GitHub.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+      
+      
+      
+      
+      
+      
+      
+    <div class="card skills-card">
+        <h2>Skills 🛠️</h2>
+    
+        <div class="skills-section">
+            <div class="skills-header">
+                <i class="fas fa-laptop-code icon"></i>
+                <strong>Frameworks & Technologies:</strong>
+            </div>
+            <span>Angular, ASP.NET MVC, .NET Core, React, REST API, Web Services, Express.js, Web APIs</span>
+        </div>
+    
+        <div class="skills-section">
+            <div class="skills-header">
+                <i class="fas fa-tools icon"></i>
+                <strong>Tools & Platforms:</strong>
+            </div>
+            <span>Visual Studio, SQL Server, XAMPP, Firebase, Git, GitHub, Crystal Reports, Node.js</span>
+        </div>
+    
+        <div class="skills-section">
+            <div class="skills-header">
+                <i class="fas fa-database icon"></i>
+                <strong>Databases:</strong>
+            </div>
+            <span>SQL Server, Firebase Realtime Database, MySQL, MongoDB</span>
+        </div>
+    
+        <div class="skills-section">
+            <div class="skills-header">
+                <i class="fas fa-project-diagram icon"></i>
+                <strong>Methodologies:</strong>
+            </div>
+            <span>Agile (Scrum), Continuous Integration/Continuous Deployment (CI/CD)</span>
+        </div>
+    
+        <div class="skills-section">
+            <div class="skills-header">
+                <i class="fas fa-code icon"></i>
+                <strong>Programming Languages:</strong>
+            </div>
+            <span>JavaScript, C#, TypeScript, Python, HTML, CSS, SQL</span>
+        </div>
+    </div>
+    
+      
+      <div class="card">
+        <h2>Projects 📚</h2>
+        <div class="projects-container">
+          
+          <div class="project-card">
+            <div class="project-content">
+              <strong>Online Book Store</strong>
+              <p>An online book ordering website.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, XAMPP</div>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>StyleHub</strong>
+              <p>A salon appointment booking app.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Android Studio, Firebase, Razorpay</div>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>Portfolio Website</strong>
+              <p>Personal portfolio showcasing skills.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Angular, TypeScript, SCSS, Bootstrap, Vercel</div>
+              <a href="https://portfolio-delta-ivory-17.vercel.app/en" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>TV Services</strong>
+              <p>TV service provider website.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</div>
+              <a href="https://amnnrajbhar.github.io/TvService/" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>Weather Web App</strong>
+              <p>Real-time weather updates app.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> HTML, CSS, JavaScript, OpenWeather API, Vercel</div>
+              <a href="https://weather-app-amnnrajbhars-projects.vercel.app/" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>GenAI Web App</strong>
+              <p>AI-powered chatbot application.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Ionic, Angular, Google’s Generative AI, Vercel</div>
+              <a href="https://genai-ionic.vercel.app/home" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>LMS Portal</strong>
+              <p>A Learning Management System (LMS).</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Angular, Firebase, Vercel</div>
+              <a href="https://lms-portal-jet.vercel.app/" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>Digital Loan Process App</strong>
+              <p>A digital loan processing system.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Angular, Node.js, MongoDB, Vercel</div>
+              <a href="https://digital-loan-process-app.vercel.app/" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <div class="project-content">
+              <strong>HRMS Portal</strong>
+              <p>A Human Resource Management System.</p>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Angular, Node.js, MongoDB, Vercel</div>
+              <a href="https://hrms-portal-zeta.vercel.app/" target="_blank" class="live-link">Live Link</a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>Certifications 🎓</h2>
+        <ul class="projects">
+          <li>
+            <strong>Advanced Angular:</strong> Certified in advanced Angular
+            development through Great Learning
+          </li>
+          <li>
+            <strong>ASP.NET MVC Development:</strong> Proficient in building web
+            applications with ASP.NET MVC
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <p>&copy; 2024 Aman Rajbhar. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
