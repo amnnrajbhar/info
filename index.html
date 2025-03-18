@@ -50,44 +50,58 @@
     />
 
     <link rel="stylesheet" href="styles.css">
-   
   </head>
 
   <body>
+    <!-- Loading Screen -->
+    <div class="loading">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <div class="container">
       <header>
-        <h1>Aman Rajbhar</h1>
-        <p>Software Engineer</p>
+        <div class="profile-section">
+          <img src="me.jpeg" alt="Aman Rajbhar" class="profile-image">
+          <div class="profile-info">
+            <h1>Aman Rajbhar</h1>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+        
         <div class="contact-info">
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:amnnrajbhar@gmail.com">amnnrajbhar@gmail.com</a>
-          </p>
-          <p>
-            <i class="fas fa-phone"></i> <a href="tel:7304236208">7304236208</a>
-          </p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i>
-            <a href="https://maps.google.com/?q=Mumbai,%20India" target="_blank"
-              >Mumbai, India</a
-            >
-          </p>
-          <p>
-            <i class="fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/amnn-rajbhar" target="_blank"
-              >Amnn Rajbhar | Angular | MVC</a
-            >
-          </p>
-          <p>
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/amnnrajbhar" target="_blank"
-              >amnnrajbhar</a
-            >
-          </p>
-          <p>
-            <i class="fas fa-file-alt"></i>
-            <a href="https://amnnrajbhar.tiiny.site" target="_blank">Resume</a>
-          </p>
+          <div class="contact-item">
+            <div class="contact-icon email"></div>
+            <a href="mailto:amanrajbhar289@gmail.com">amanrajbhar289@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon phone"></div>
+            <a href="tel:+91 7304236208">+91 7304236208</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon location"></div>
+            <a href="https://maps.google.com/?q=Gorakhpur,UP">Mumbai, IN</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon linkedin"></div>
+            <a href="https://www.linkedin.com/in/amnn-rajbhar" target="_blank">LinkedIn Profile</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon github"></div>
+            <a href="https://github.com/amnnrajbhar" target="_blank">GitHub Profile</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon resume"></div>
+            <a href="https://amnnrajbhar.tiiny.site/" target="_blank">Download Resume</a>
+          </div>
         </div>
       </header>
       <div class="card education-card">
@@ -175,6 +189,9 @@
                 <strong>Frameworks & Technologies:</strong>
             </div>
             <span>Angular, ASP.NET MVC, .NET Core, React, REST API, Web Services, Express.js, Web APIs</span>
+            <div class="skills-progress">
+                <div class="progress-bar" data-progress="90%"></div>
+            </div>
         </div>
     
         <div class="skills-section">
@@ -183,6 +200,9 @@
                 <strong>Tools & Platforms:</strong>
             </div>
             <span>Visual Studio, SQL Server, XAMPP, Firebase, Git, GitHub, Crystal Reports, Node.js</span>
+            <div class="skills-progress">
+                <div class="progress-bar" data-progress="85%"></div>
+            </div>
         </div>
     
         <div class="skills-section">
@@ -191,6 +211,9 @@
                 <strong>Databases:</strong>
             </div>
             <span>SQL Server, Firebase Realtime Database, MySQL, MongoDB</span>
+            <div class="skills-progress">
+                <div class="progress-bar" data-progress="80%"></div>
+            </div>
         </div>
     
         <div class="skills-section">
@@ -199,6 +222,9 @@
                 <strong>Methodologies:</strong>
             </div>
             <span>Agile (Scrum), Continuous Integration/Continuous Deployment (CI/CD)</span>
+            <div class="skills-progress">
+                <div class="progress-bar" data-progress="75%"></div>
+            </div>
         </div>
     
         <div class="skills-section">
@@ -207,6 +233,9 @@
                 <strong>Programming Languages:</strong>
             </div>
             <span>JavaScript, C#, TypeScript, Python, HTML, CSS, SQL</span>
+            <div class="skills-progress">
+                <div class="progress-bar" data-progress="95%"></div>
+            </div>
         </div>
     </div>
     
@@ -262,7 +291,7 @@
             <div class="project-content">
               <strong>GenAI Web App</strong>
               <p>AI-powered chatbot application.</p>
-              <div class="tech-stack"><strong>Tech Stack:</strong> Ionic, Angular, Google’s Generative AI, Vercel</div>
+              <div class="tech-stack"><strong>Tech Stack:</strong> Ionic, Angular, Google's Generative AI, Vercel</div>
               <a href="https://genai-ionic.vercel.app/home" target="_blank" class="live-link">Live Link</a>
             </div>
           </div>
@@ -314,5 +343,82 @@
         <p>&copy; 2024 Aman Rajbhar. All Rights Reserved.</p>
       </footer>
     </div>
+
+    <script>
+      // Dark mode toggle
+      const darkModeToggle = document.querySelector('.dark-mode-toggle');
+      const body = document.body;
+      
+      // Check for saved dark mode preference
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        darkModeToggle.querySelector('i').classList.remove('fa-moon');
+        darkModeToggle.querySelector('i').classList.add('fa-sun');
+      }
+      
+      darkModeToggle.addEventListener('click', () => {
+        darkModeToggle.classList.add('clicked');
+        body.classList.toggle('dark-mode');
+        
+        const icon = darkModeToggle.querySelector('i');
+        if (body.classList.contains('dark-mode')) {
+          localStorage.setItem('darkMode', 'enabled');
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        } else {
+          localStorage.setItem('darkMode', null);
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        }
+        
+        // Remove clicked class after animation
+        setTimeout(() => {
+          darkModeToggle.classList.remove('clicked');
+        }, 500);
+      });
+
+      // Loading screen
+      window.addEventListener('load', () => {
+        const loading = document.querySelector('.loading');
+        setTimeout(() => {
+          loading.classList.add('hidden');
+        }, 1000);
+      });
+
+      // Scroll to Top Button
+      const scrollToTop = document.querySelector('.scroll-to-top');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          scrollToTop.classList.add('visible');
+        } else {
+          scrollToTop.classList.remove('visible');
+        }
+      });
+      
+      scrollToTop.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Skills progress animation
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const progressBars = entry.target.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+              const progress = bar.getAttribute('data-progress');
+              bar.style.width = progress;
+            });
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.skills-card').forEach(card => {
+        observer.observe(card);
+      });
+    </script>
   </body>
 </html>
