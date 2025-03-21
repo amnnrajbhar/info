@@ -736,7 +736,7 @@ body.dark-mode .card h2 {
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: .012em;
-  color: var(--text-color);
+  /* color: var(--text-color); */
   opacity: 0.8;
   margin-bottom: 20px;
   flex: 1;
@@ -1662,4 +1662,15 @@ header p {
   .contact-info {
     animation-duration: 0.5s;
   }
+}
+
+#typed-name {
+  font-size: 2.5rem; /* Match your original h1 size */
+  font-weight: bold;
+  margin: 0;
+}
+
+.typed-cursor {
+  font-size: 2.5rem; /* Match cursor size to text */
+  color: #000; /* Customize cursor color */
 }

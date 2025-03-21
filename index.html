@@ -50,6 +50,24 @@
     />
 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // Existing JavaScript code...
+
+      // Initialize Typed.js for the h1 element
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed("#typed-name", {
+          strings: ["Aman Rajbhar","अमन राजभर"], // You can add more strings if you want multiple phrases
+          typeSpeed: 200, // Speed of typing (in milliseconds)
+          backSpeed: 200, // Speed of backspacing (if you use multiple strings)
+          startDelay: 500, // Delay before typing starts
+          loop: true, // Set to true if you want it to loop
+          showCursor: false, // Show a blinking cursor
+          cursorChar: "|", // Customize the cursor character
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -67,7 +85,7 @@
         <div class="profile-section">
           <img src="me.jpeg" alt="Aman Rajbhar" class="profile-image">
           <div class="profile-info">
-            <h1>Aman Rajbhar</h1>
+            <h1 id="typed-name">Aman Rajbhar</h1>
             <p>Software Engineer</p>
           </div>
         </div>
