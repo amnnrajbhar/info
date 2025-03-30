@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amnnrajbhar.github.io/info/sitemap.xml
