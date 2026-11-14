@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Rajbhar | Full Stack Engineer — Angular & .NET</title>
+  <meta name="description" content="Full Stack Engineer with 3.8+ years building scalable enterprise software with Angular, ASP.NET, and SQL Server. Explore projects, experience, and skills.">
+  <meta name="keywords" content="Aman Rajbhar, Full Stack Engineer, Angular Developer, ASP.NET Developer, Software Engineer, Portfolio, TypeScript, .NET Core, SQL Server, Enterprise Applications">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://amnnrajbhar.github.io/info/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aman Rajbhar | Full Stack Engineer">
+  <meta property="og:description" content="Building scalable enterprise software with Angular, .NET & SQL Server. 3.8+ years of experience.">
+  <meta property="og:image" content="https://amnnrajbhar.github.io/info/assets/images/portrait.jpg">
+  <meta property="og:url" content="https://amnnrajbhar.github.io/info/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aman Rajbhar | Full Stack Engineer">
+  <meta name="twitter:description" content="Building scalable enterprise software with Angular, .NET & SQL Server.">
+  <meta name="twitter:image" content="https://amnnrajbhar.github.io/info/assets/images/portrait.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aman Rajbhar",
+    "url": "https://amnnrajbhar.github.io/info/",
+    "image": "https://amnnrajbhar.github.io/info/assets/images/portrait.jpg",
+    "jobTitle": "Full Stack Engineer",
+    "alumniOf": "University of Mumbai",
+    "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressCountry": "IN" },
+    "skills": ["Angular", "ASP.NET Core", "TypeScript", "SQL Server", "Node.js", "Python", "PyTorch", "REST APIs"],
+    "sameAs": ["https://www.linkedin.com/in/amnn-rajbhar", "https://github.com/amnnrajbhar"]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Skip to content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="nav-logo-icon">&lt;/&gt;</span>
+        <span class="nav-logo-text">AR</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="resume.pdf" class="nav-cta" download aria-label="Download Resume">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile" role="menu">
+      <a href="#hero" class="nav-link active" role="menuitem">Home</a>
+      <a href="#about" class="nav-link" role="menuitem">About</a>
+      <a href="#experience" class="nav-link" role="menuitem">Experience</a>
+      <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+      <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+      <a href="#github" class="nav-link" role="menuitem">GitHub</a>
+      <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+      <div class="mobile-actions">
+        <button class="theme-toggle mobile-theme-btn" id="mobileThemeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i> <span>Toggle Theme</span>
+        </button>
+        <a href="resume.pdf" class="nav-cta mobile-cta" download role="menuitem">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN ===== -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+        <div class="hero-text">
+          <span class="hero-badge fade-up">Hello, I'm</span>
+          <h1 class="hero-name fade-up">Aman Rajbhar</h1>
+          <p class="hero-role fade-up">Full Stack Engineer</p>
+          <p class="hero-tagline fade-up">Angular · .NET · SQL Server</p>
+          <p class="hero-description fade-up">
+            Building scalable enterprise software with modern technologies.
+          </p>
+          <div class="hero-actions fade-up">
+            <a href="#projects" class="btn-primary">
+              View Projects <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="resume.pdf" class="btn-secondary" download>
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="hero-center-grid">
+          <div class="hero-quote fade-up">
+            <span class="quote-mark">“</span>
+            <p>I build scalable web applications and exceptional digital experiences.</p>
+          </div>
+
+          <div class="hero-visual fade-up">
+            <div class="hero-circle"></div>
+            <img src="assets/images/portrait.jpg" alt="Aman Rajbhar — Full Stack Engineer" class="hero-image" loading="eager" width="340" height="400">
+          </div>
+
+          <div class="hero-rating fade-up">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="exp-text">
+              <strong>3.8+ Years</strong>
+              <span>Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-up">About <span class="accent">Me</span></h2>
+          <p class="section-subtitle fade-up">Get to know me — my background, expertise, and what drives me.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-wrap fade-up">
+            <img src="assets/images/portrait.jpg" alt="Aman Rajbhar — Full Stack Engineer" class="about-photo" loading="lazy" width="360" height="400">
+          </div>
+
+          <div class="about-info">
+            <div class="about-stats" id="aboutStats">
+              <!-- Populated by JS using STATS data -->
+            </div>
+
+            <div class="about-bio fade-up">
+              <p id="aboutBio"></p>
+            </div>
+
+            <div class="about-details fade-up">
+              <span class="about-detail">
+                <i class="fas fa-graduation-cap"></i> <span id="aboutEdu"></span>
+              </span>
+              <span class="about-detail">
+                <i class="fas fa-map-marker-alt"></i> <span id="aboutLocation"></span>
+              </span>
+              <span class="about-detail availability">
+                <i class="fas fa-circle"></i> <span id="aboutAvailability"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-up">Work <span class="accent">Experience</span></h2>
+          <p class="section-subtitle fade-up">My professional journey building enterprise software.</p>
+        </div>
+        <div class="timeline" id="timeline">
+          <!-- Populated by JS using EXPERIENCE data -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-up">Featured <span class="accent">Projects</span></h2>
+          <p class="section-subtitle fade-up">Case studies of projects I've built — real problems, real solutions.</p>
+        </div>
+        <div class="projects-featured" id="projectsFeatured">
+          <!-- Populated by JS using PROJECTS_FEATURED data -->
+        </div>
+
+        <h3 class="other-projects-title fade-up">Other Projects</h3>
+        <div class="projects-other-grid" id="projectsOther">
+          <!-- Populated by JS using PROJECTS_OTHER data -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-up">Skills & <span class="accent">Technologies</span></h2>
+          <p class="section-subtitle fade-up">Technologies I use daily to build scalable enterprise applications.</p>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Populated by JS using SKILLS data -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB STATS -->
+    <section id="github" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title fade-up">GitHub <span class="accent">Activity</span></h2>
+          <p class="section-subtitle fade-up">Continuous building and open-source contributions.</p>
+        </div>
+        <div class="github-grid" id="githubGrid">
+          <!-- Populated by JS using GITHUB_STATS data -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="cta-card fade-up">
+          <div class="cta-icon"><i class="fas fa-rocket"></i></div>
+          <h2 class="cta-heading">Let's Build Something Great Together</h2>
+          <p class="cta-subtitle">I'm open to new opportunities and exciting projects. Let's connect.</p>
+          <a href="mailto:amanrajbhar311@gmail.com" class="btn-primary cta-btn">
+            Contact Me <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="contact-links fade-up" id="contactLinks">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner container">
+      <p class="footer-copy">&copy; 2025 Aman Rajbhar · Built with precision in Mumbai 🇮🇳</p>
+      <div class="footer-links" id="footerLinks">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

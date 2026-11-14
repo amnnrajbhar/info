@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Rajbhar | Angular & ASP.NET Developer Portfolio</title>
+  <meta name="description"
+    content="Explore Aman Rajbhar's portfolio, a skilled Angular and ASP.NET developer specializing in web development, scalable microservices, and UI/UX design." />
+  <meta name="keywords"
+    content="Aman Rajbhar, Angular Developer, ASP.NET Developer, Software Engineer, Web Developer, Portfolio, Microservices, UI/UX Design, AI/ML, Python, PyTorch, MEAN Stack, Full Stack Developer" />
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aman Rajbhar",
+        "url": "https://amnnrajbhar.github.io/info/",
+        "image": "https://amnnrajbhar.github.io/info/portrait.jpg",
+        "jobTitle": "Software Engineer",
+        "alumniOf": "University of Mumbai",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressCountry": "IN"
+        },
+        "skills": ["Angular","ASP.NET","TypeScript","Web Development","Microservices","UI/UX Design","Python","PyTorch","AI/ML","MEAN Stack"],
+        "sameAs": ["https://www.linkedin.com/in/amnn-rajbhar","https://github.com/amnnrajbhar"]
+      }
+    </script>
+
+  <meta property="og:title" content="Aman Rajbhar | Angular & ASP.NET Developer Portfolio" />
+  <meta property="og:description" content="Discover Aman Rajbhar's expertise in Angular, ASP.NET, and scalable web development." />
+  <meta property="og:image" content="https://amnnrajbhar.github.io/info/portrait.jpg" />
+  <meta property="og:url" content="https://amnnrajbhar.github.io/info/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aman Rajbhar | Angular & ASP.NET Developer Portfolio" />
+  <meta name="twitter:description" content="Explore Aman Rajbhar's portfolio showcasing skills in Angular, ASP.NET, and web development." />
+  <meta name="twitter:image" content="https://amnnrajbhar.github.io/info/portrait.jpg" />
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav-menu" id="navbar">
+    <div class="nav-left">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+    </div>
+    <a href="#home" class="nav-logo">
+      <span class="logo-icon">&lt;/&gt;</span>
+      AMAN RAJBHAR
+    </a>
+    <div class="nav-right-links">
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <button class="scroll-to-top" aria-label="Scroll to top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <!-- Decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-container">
+      <!-- Hello badge -->
+      <div class="hero-badge-wrap">
+        <span class="hero-badge">Hello!</span>
+      </div>
+
+      <!-- Hero title -->
+      <h1 class="hero-title">
+        I'm <span class="accent" id="typed-name">Aman Rajbhar</span>,<br>
+        Software Engineer
+      </h1>
+
+      <!-- Hero image with orange circle -->
+      <div class="hero-visual">
+        <div class="hero-circle"></div>
+        <img src="portrait.jpg" alt="Aman Rajbhar" class="hero-image" loading="eager">
+      </div>
+
+      <!-- Quote left -->
+      <div class="hero-quote">
+        <span class="quote-mark">"</span>
+        <p>I build scalable web applications and exceptional digital experiences.</p>
+      </div>
+
+      <!-- Stars right -->
+      <div class="hero-rating">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="exp-text"><strong>3.8+ Years</strong><br>Experience</div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-up-right-from-square"></i></a>
+        <a href="mailto:amanrajbhar311@gmail.com" class="btn-ghost">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT I DO ===== -->
+  <section id="about" class="section what-i-do">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <h2 class="section-title">What I <span class="accent">Do</span></h2>
+        </div>
+        <div class="blob-hand">👋</div>
+        <p class="section-subtitle">I transform ideas into functional, beautiful and user-friendly web applications.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <p>Building responsive and high-performance websites using modern technologies.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Frontend Development</h3>
+          <p>Crafting interactive UIs with Angular, TypeScript and modern tools.</p>
+        </div>
+        <div class="service-card highlight">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Backend Development</h3>
+          <p>Building robust APIs and server-side applications with ASP.NET & Node.js.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>Database Design</h3>
+          <p>Designing efficient and scalable database schemas and queries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills & <span class="accent">Technologies</span></h2>
+      <p class="section-subtitle">Technologies I work with daily to build scalable enterprise applications.</p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-header"><i class="fas fa-laptop-code"></i><strong>Frameworks</strong></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Angular</span><span class="skill-tag">ASP.NET MVC</span><span class="skill-tag">.NET Core</span><span class="skill-tag">React</span><span class="skill-tag">REST API</span><span class="skill-tag">Express.js</span><span class="skill-tag">FastAPI</span><span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-header"><i class="fas fa-code"></i><strong>Languages</strong></div>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">C#</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Python</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-header"><i class="fas fa-database"></i><strong>Databases</strong></div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL Server</span><span class="skill-tag">Firebase</span><span class="skill-tag">MySQL</span><span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-header"><i class="fas fa-wrench"></i><strong>Tools & Platforms</strong></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Visual Studio</span><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Node.js</span><span class="skill-tag">Postman</span><span class="skill-tag">JIRA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header-row">
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <p class="section-subtitle">Some of the projects I've worked on.</p>
+      </div>
+      <div class="blob blob-proj-1"></div>
+      <div class="blob blob-proj-2"></div>
+
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">💰</div>
+            <strong>Money Manager</strong>
+            <p>Full-stack personal finance management app with transaction tracking, investment portfolio, and analytics.</p>
+            <div class="tech-pills">
+              <span>Angular 17</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://moneymanager-jade.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/amnnrajbhar/moneyManager" target="_blank" rel="noopener noreferrer" class="btn-project outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">🧠</div>
+            <strong>tinyLLM</strong>
+            <p>A miniature LLM built from scratch using PyTorch with character-level Transformer architecture.</p>
+            <div class="tech-pills">
+              <span>Python</span><span>PyTorch</span><span>FastAPI</span><span>Transformers</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mannllm.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/amnnrajbhar/tinyLLM" target="_blank" rel="noopener noreferrer" class="btn-project outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">🤖</div>
+            <strong>GenAI Web App</strong>
+            <p>AI-powered chatbot application using Google's Generative AI.</p>
+            <div class="tech-pills">
+              <span>Ionic</span><span>Angular</span><span>Google AI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://genai-chatbot-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">👥</div>
+            <strong>HRMS Portal</strong>
+            <p>A Human Resource Management System for enterprises.</p>
+            <div class="tech-pills">
+              <span>Angular</span><span>Tailwind</span><span>Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://hrms-pro-omega.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">📚</div>
+            <strong>LMS Portal</strong>
+            <p>A Learning Management System with Firebase backend.</p>
+            <div class="tech-pills">
+              <span>Angular</span><span>Firebase</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://lms-portal-jet.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">🏦</div>
+            <strong>Digital Loan Process</strong>
+            <p>A digital loan processing system with full workflow.</p>
+            <div class="tech-pills">
+              <span>Angular</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://digital-loan-process-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">☁️</div>
+            <strong>Media Upload</strong>
+            <p>Media Upload Web App with cloud storage integration.</p>
+            <div class="tech-pills">
+              <span>AWS S3</span><span>Angular</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mediaupload-iota.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card-inner">
+            <div class="project-emoji">🌦️</div>
+            <strong>Weather Web App</strong>
+            <p>Real-time weather updates app using OpenWeather API.</p>
+            <div class="tech-pills">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>OpenWeather</span>
+            </div>
+            <div class="project-links">
+              <a href="https://weather-app-amnnrajbhars-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project">Live <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <div class="job-title-row">
+              <h3>Software Engineer</h3>
+              <span class="date-badge">Dec 2024 – Present</span>
+            </div>
+            <p class="company-name">Clover Infotech Private Limited</p>
+            <ul class="job-details">
+              <li>Developed high-performance web applications using <strong>Angular, TypeScript, RxJS</strong>.</li>
+              <li>Designed and implemented <strong>scalable microservices & REST APIs</strong>.</li>
+              <li>Optimized app performance, reducing load time by <strong>70%</strong>.</li>
+              <li>Enhanced UI/UX with <strong>Material UI, CSS3, and JavaScript</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="job-title-row">
+              <h3>Junior Software Developer</h3>
+              <span class="date-badge">Aug 2022 – Dec 2024</span>
+            </div>
+            <p class="company-name">Benchmark Computer Solutions Limited</p>
+            <ul class="job-details">
+              <li>Built dynamic web apps using <strong>Angular, ASP.NET, and MVC</strong>.</li>
+              <li>Worked closely with cross-functional teams to develop new features.</li>
+              <li>Diagnosed and resolved critical bugs, ensuring application stability.</li>
+              <li>Managed version control across <strong>12+ projects</strong> using Git & GitHub.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / CONTACT ===== -->
+  <section id="contact" class="section cta-section">
+    <div class="container">
+      <div class="cta-card fade-in">
+        <div class="cta-icon"><i class="fas fa-rocket"></i></div>
+        <div class="cta-text">
+          <h2>Let's build something amazing together!</h2>
+          <p>I'm open to new opportunities and exciting projects.</p>
+        </div>
+        <a href="mailto:amanrajbhar311@gmail.com" class="btn-primary">Contact Me <i class="fas fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="contact-links fade-in">
+        <a href="mailto:amanrajbhar311@gmail.com" class="contact-chip" title="Email"><i class="fas fa-envelope"></i><span>Email</span></a>
+        <a href="tel:+919136026638" class="contact-chip" title="Phone"><i class="fas fa-phone"></i><span>Phone</span></a>
+        <a href="https://maps.google.com/?q=Mumbai,MH" class="contact-chip" title="Location"><i class="fas fa-map-marker-alt"></i><span>Mumbai</span></a>
+        <a href="https://www.linkedin.com/in/amnn-rajbhar" target="_blank" rel="noopener noreferrer" class="contact-chip" title="LinkedIn"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+        <a href="https://github.com/amnnrajbhar" target="_blank" rel="noopener noreferrer" class="contact-chip" title="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aman Rajbhar. Built with ❤️ in Mumbai 🇮🇳</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    // Loading screen
+    window.addEventListener("load", () => {
+      setTimeout(() => document.querySelector(".loading").classList.add("hidden"), 600);
+    });
+
+    // Typed.js
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed-name", {
+        strings: ["Aman Rajbhar", "अमन राजभर"],
+        typeSpeed: 200, backSpeed: 200, startDelay: 500,
+        loop: true, showCursor: false,
+      });
+    });
+
+    // Scroll to Top
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.addEventListener("scroll", () => {
+      scrollTopBtn.classList.toggle("visible", window.pageYOffset > 300);
+    });
+    scrollTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMobile.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-mobile .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMobile.classList.remove('open');
+      });
+    });
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const allNavLinks = document.querySelectorAll('.nav-link');
+    const nav = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      nav.classList.toggle('scrolled', scrollY > 80);
+
+      let current = '';
+      sections.forEach(s => { if (scrollY >= s.offsetTop - 120) current = s.id; });
+      allNavLinks.forEach(l => {
+        l.classList.remove('active');
+        if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+      });
+    });
+
+    // Fade-in on scroll
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+    // Card tilt effect
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left - r.width/2) / 20;
+        const y = (e.clientY - r.top - r.height/2) / 20;
+        card.style.transform = `perspective(1000px) rotateX(${-y}deg) rotateY(${x}deg) scale(1.02)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>

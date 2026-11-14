@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /backup_v3/
+Disallow: /tools/
+Disallow: /backup.html
+Disallow: /backup18March2025.html
+Disallow: /backup_may2026.html
+
 Sitemap: https://amnnrajbhar.github.io/info/sitemap.xml
