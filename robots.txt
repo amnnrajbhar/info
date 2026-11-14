@@ -1,3 +1,4 @@
+# Search engines and AI answer engines are welcome to index and cite this portfolio.
 User-agent: *
 Allow: /
 Disallow: /backup_v3/
@@ -5,5 +6,16 @@ Disallow: /tools/
 Disallow: /backup.html
 Disallow: /backup18March2025.html
 Disallow: /backup_may2026.html
+
+# AI search / citation crawlers (explicitly allowed)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+Disallow: /backup_v3/
+Disallow: /tools/
 
 Sitemap: https://amnnrajbhar.github.io/info/sitemap.xml

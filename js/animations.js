@@ -21,15 +21,11 @@
     lenis.on("scroll", ScrollTrigger.update);
     gsap.ticker.add((time) => lenis.raf(time * 1000));
     gsap.ticker.lagSmoothing(0);
-    if (document.body.classList.contains("is-loading")) lenis.stop();
     window.addEventListener("app:ready", () => lenis.start(), { once: true });
   }
 
   /* ---------- Hero intro (after boot) ---------- */
   window.addEventListener("app:ready", () => {
-    gsap.fromTo(".reveal-hero",
-      { opacity: 0, y: 40, filter: "blur(8px)" },
-      { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.1, ease: "expo.out", stagger: 0.09, clearProps: "transform,filter" });
     gsap.from(".nav", { y: -30, opacity: 0, duration: 0.9, ease: "expo.out", clearProps: "transform,opacity" });
     setupScroll();
   }, { once: true });

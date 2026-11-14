@@ -74,6 +74,7 @@ const PROJECTS_FEATURED = [
     techStack: ["Angular 17", "Node.js", "MongoDB", "JWT", "Chart.js"],
     liveUrl: "https://moneymanager-jade.vercel.app/",
     image: "assets/images/projects/money-manager.jpg",
+    imageWebp: "assets/images/projects/money-manager.webp",
     githubUrl: "https://github.com/amnnrajbhar/moneyManager",
     metrics: [
       { label: "Modules", value: "8+" },

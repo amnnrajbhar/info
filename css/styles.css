@@ -550,7 +550,17 @@ kbd {
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
 /* ============ REVEAL DEFAULTS (JS enhances) ============ */
-.js-anim .reveal, .js-anim .reveal-hero { opacity: 0; }
+.js-anim .reveal { opacity: 0; }
+/* Hero animates with pure CSS and stays opaque, so it counts for LCP on first paint */
+.reveal-hero { animation: heroIn 0.9s var(--ease) both; }
+.hero-copy > .reveal-hero:nth-child(2) { animation-delay: 0.06s; }
+.hero-copy > .reveal-hero:nth-child(3) { animation-delay: 0.12s; }
+.hero-copy > .reveal-hero:nth-child(4) { animation-delay: 0.18s; }
+.hero-copy > .reveal-hero:nth-child(5) { animation-delay: 0.24s; }
+.hero-copy > .reveal-hero:nth-child(6) { animation-delay: 0.30s; }
+.hero-copy > .reveal-hero:nth-child(7) { animation-delay: 0.36s; }
+.hero-term.reveal-hero { animation-delay: 0.2s; }
+@keyframes heroIn { from { transform: translateY(28px); filter: blur(6px); } to { transform: none; filter: none; } }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1080px) {
@@ -588,7 +598,7 @@ kbd {
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
-  .js-anim .reveal, .js-anim .reveal-hero { opacity: 1; }
+  .js-anim .reveal { opacity: 1; } .reveal-hero { animation: none; }
   .marquee-track { animation: none; }
 }
 
@@ -646,3 +656,16 @@ kbd {
   .playbook { grid-template-columns: 1fr; }
   .sec-intro { font-size: 16px; margin-top: -16px; }
 }
+
+/* ============ FAQ ============ */
+.faq-list { display: grid; gap: 12px; max-width: 900px; }
+.faq-item { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); backdrop-filter: blur(10px); transition: border-color 0.3s; }
+.faq-item[open] { border-color: rgba(57, 255, 136, 0.35); }
+.faq-item summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 14px; padding: 18px 22px; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::before { content: "❯"; font-family: var(--mono); color: var(--green); transition: transform 0.3s var(--ease); }
+.faq-item[open] summary::before { transform: rotate(90deg); }
+.faq-item h3 { font-size: 17px; color: #fff; font-weight: 600; }
+.faq-item p { padding: 0 22px 20px 50px; color: var(--muted); font-size: 15.5px; }
+.faq-item a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) { .faq-item p { padding-left: 22px; } }

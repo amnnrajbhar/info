@@ -116,7 +116,7 @@
           <span class="project-idx">0${i + 1}</span>
           ${p.image ? `<a class="preview" href="${p.liveUrl}" target="_blank" rel="noopener" aria-label="Open ${esc(p.title)} live">
             <span class="preview-bar"><span class="dots"><i></i><i></i><i></i></span><span class="preview-url">${esc(p.liveUrl.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</span></span>
-            <img src="${p.image}" alt="Screenshot of ${esc(p.title)}" loading="lazy" width="1280" height="800">
+            <picture>${p.imageWebp ? `<source srcset="${p.imageWebp}" type="image/webp">` : ""}<img src="${p.image}" alt="Screenshot of ${esc(p.title)}, ${esc(p.description.split(" with ")[0].toLowerCase())}" loading="lazy" decoding="async" width="1280" height="800"></picture>
           </a>` : ""}
           <div class="arch ${p.image ? "compact" : ""}">
             ${p.architecture.map((a, j) => `${j && !p.image ? '<span class="arch-link"></span>' : ""}
@@ -172,7 +172,7 @@
       ${g.topLanguages.map((l) => `<div class="lang-row"><i style="background:${l.color}"></i>${esc(l.name)}<b>${l.percent}%</b></div>`).join("")}`;
     $("#ghStats").innerHTML = g.stats.map((s2) => `<div class="gh-stat"><span>${esc(s2.label)}</span><b>${esc(s2.value)}</b></div>`).join("");
 
-    $("#year").textContent = new Date().getFullYear();
+    
   }
 
   // Count how many jobs/projects mention a skill (real usage, not invented levels)
@@ -204,29 +204,11 @@
   });
 
   /* ================= BOOT ================= */
-  async function boot() {
-    const log = $("#bootLog"), bar = $("#bootBar");
-    const seen = sessionStorageGet("booted");
-    const steps = [
-      "[    0.000] booting aman.dev kernel v4.0",
-      "[    0.042] mounting /projects ............ <span class='ok'>ok</span>",
-      "[    0.087] loading angular@17 runtime .... <span class='ok'>ok</span>",
-      "[    0.121] connecting sqlserver://exp ... <span class='ok'>ok</span>",
-      "[    0.164] compiling shaders ............ <span class='ok'>ok</span>",
-      "[    0.200] welcome, visitor."
-    ];
-    const speed = REDUCED || seen ? 0 : 140;
-    for (let i = 0; i < steps.length; i++) {
-      log.innerHTML += steps[i] + "\n";
-      bar.style.width = `${((i + 1) / steps.length) * 100}%`;
-      if (speed) await wait(speed + Math.random() * 80);
-    }
-    sessionStorageSet("booted", "1");
-    await wait(speed ? 250 : 50);
-    $("#boot").classList.add("done");
-    document.body.classList.remove("is-loading");
-    window.dispatchEvent(new Event("app:ready"));
-    startHero();
+  function boot() {
+    // No blocking loader: content is visible on first paint (better LCP).
+    // Fire app:ready once every deferred script has registered its listeners.
+    const go = () => { window.dispatchEvent(new Event("app:ready")); startHero(); };
+    document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", go, { once: true }) : setTimeout(go);
   }
   function sessionStorageGet(k) { try { return sessionStorage.getItem(k); } catch { return null; } }
   function sessionStorageSet(k, v) { try { sessionStorage.setItem(k, v); } catch {} }

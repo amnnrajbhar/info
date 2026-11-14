@@ -1,0 +1,27 @@
+# Aman Rajbhar — Forward Deployed & Full Stack Engineer
+
+> Aman Rajbhar is a Forward Deployed and Full Stack Software Engineer in Mumbai, India, with 4.5+ years of experience shipping production web applications for enterprise clients in insurance, pharma and fintech. Core stack: React, Next.js, Angular, TypeScript, ASP.NET Core, C#, Node.js, SQL Server. Open to Forward Deployed Engineer and full-stack roles.
+
+## Profile
+
+- [Portfolio](https://amnnrajbhar.github.io/info/): projects, experience, skills and contact
+- [Resume (PDF)](https://drive.google.com/file/d/1yLZnWEKSUL2MvBb5p_VzoII4HDW1Rpnn/view?usp=sharing): full CV
+- [LinkedIn](https://www.linkedin.com/in/amnn-rajbhar): professional profile
+- [GitHub](https://github.com/amnnrajbhar): source code
+
+## Experience
+
+- Software Engineer, Clover Infotech (Dec 2024 – present): migrating ICICI Lombard's two-wheeler insurance journey from Angular to Next.js 16 with React; led a team of 6 engineers migrating Micro Labs' Unnati platform from Angular 6 to Angular 19; cut load times by 70% with OnPush change detection and lazy loading; built .NET Core microservices and REST APIs.
+- Junior Software Developer, Benchmark Computer Solutions (Aug 2022 – Dec 2024): built Angular and ASP.NET MVC applications, resolved critical production bugs, and managed Git across 12+ enterprise projects.
+
+## Projects
+
+- [Money Manager](https://moneymanager-jade.vercel.app/): full-stack personal finance app (Angular 17, Node.js, MongoDB, JWT, Chart.js)
+- [tinyLLM](https://github.com/amnnrajbhar/tinyLLM): character-level Transformer language model built from scratch in PyTorch, served with FastAPI
+- [HRMS Portal](https://hrms-pro-omega.vercel.app/): HR management system with role-based access control (Angular, Node.js)
+
+## Optional
+
+- [GenAI chatbot](https://genai-chatbot-psi.vercel.app/): Ionic + Angular app using Google Generative AI
+- [LMS Portal](https://lms-portal-jet.vercel.app/): learning management system on Firebase
+- [Digital Loan Process](https://digital-loan-process-app.vercel.app/): loan workflow app (Angular, Node.js, MongoDB)

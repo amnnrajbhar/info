@@ -73,7 +73,7 @@
         "givenName": "Aman",
         "familyName": "Rajbhar",
         "url": "https://amnnrajbhar.github.io/info/",
-        "image": "https://amnnrajbhar.github.io/info/assets/images/portrait.jpg",
+        "image": "https://amnnrajbhar.github.io/info/assets/images/portrait-680.jpg",
         "jobTitle": "Forward Deployed / Full Stack Software Engineer",
         "description": "Forward Deployed and Full Stack Software Engineer with 4.5+ years shipping production software for enterprise clients in insurance, pharma and fintech, using React, Next.js, Angular, TypeScript and ASP.NET Core.",
         "worksFor": { "@type": "Organization", "name": "Clover Infotech Private Limited" },
@@ -103,31 +103,25 @@
   </script>
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="assets/images/portrait.jpg">
+  <link rel="apple-touch-icon" href="assets/images/portrait-680.jpg">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-friendly summary">
 
   <!-- Performance: preconnect + non-blocking icon CSS (better Core Web Vitals) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-  <link rel="stylesheet" href="css/styles.css?v=4.5">
+  <link rel="stylesheet" href="css/styles.css?v=4.6">
 
   <script type="importmap">
   { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
   </script>
 </head>
-<body class="is-loading">
-
-  <!-- ===== BOOT LOADER ===== -->
-  <div class="boot" id="boot" aria-hidden="true">
-    <div class="boot-inner">
-      <pre class="boot-log" id="bootLog"></pre>
-      <div class="boot-bar"><span id="bootBar"></span></div>
-    </div>
-  </div>
+<body>
 
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -187,6 +181,7 @@
           <h1 class="hero-name reveal-hero">
             <span class="scramble" data-text="Aman">Aman</span>
             <span class="scramble outline" data-text="Rajbhar">Rajbhar</span>
+            <span class="sr-only"> — Forward Deployed &amp; Full Stack Engineer in Mumbai</span>
           </h1>
           <p class="hero-role reveal-hero">
             <span class="c-key">const</span> role = <span class="c-str">"<span id="roleRotator">Forward Deployed Engineer</span>"</span>;
@@ -241,7 +236,10 @@
         <div class="about-grid">
           <div class="about-photo reveal">
             <div class="photo-frame tilt" data-tilt-max="10">
-              <img src="assets/images/portrait.jpg" alt="Portrait of Aman Rajbhar" loading="lazy" width="420" height="500">
+              <picture>
+                <source srcset="assets/images/portrait-680.webp" type="image/webp">
+                <img src="assets/images/portrait-680.jpg" alt="Aman Rajbhar, Forward Deployed and Full Stack Engineer, Mumbai" loading="lazy" decoding="async" width="680" height="810">
+              </picture>
               <span class="photo-scan"></span>
               <span class="photo-corner tl"></span><span class="photo-corner tr"></span>
               <span class="photo-corner bl"></span><span class="photo-corner br"></span>
@@ -431,6 +429,61 @@
       </div>
     </section>
 
+    <!-- ===== FAQ (static HTML: readable by every crawler and AI answer engine) ===== -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <header class="sec-head">
+          <span class="sec-num">?</span>
+          <h2 class="sec-title"><span class="sr-only">Frequently asked questions about Aman Rajbhar — </span><span class="c-com" aria-hidden="true">//</span> faq</h2>
+          <span class="sec-line"></span>
+        </header>
+
+        <div class="faq-list">
+          <details class="faq-item reveal" open>
+            <summary><h3>Who is Aman Rajbhar?</h3></summary>
+            <p>Aman Rajbhar is a Forward Deployed and Full Stack Software Engineer based in Mumbai, India, with 4.5+ years of experience
+              shipping production web applications. He is a Software Engineer at Clover Infotech, where he delivers software for enterprise
+              clients in insurance and pharma, including ICICI Lombard and Micro Labs. Before that, he spent over two years at Benchmark
+              Computer Solutions building Angular and ASP.NET applications across 12+ enterprise projects.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary><h3>What does a Forward Deployed Engineer do, and how does Aman fit?</h3></summary>
+            <p>A Forward Deployed Engineer works directly with customers to understand their problem, builds and deploys the solution, and
+              stays accountable for the outcome in production. Aman works this way on client projects: he led a team of 6 engineers to
+              migrate Micro Labs' Unnati platform from Angular 6 to Angular 19, is migrating a large insurance platform from Angular to
+              Next.js 16, and cut application load times by 70% through OnPush change detection and lazy loading.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary><h3>What technologies does Aman Rajbhar work with?</h3></summary>
+            <p>On the frontend, Aman works with React, Next.js, Angular, TypeScript, RxJS and Tailwind CSS. On the backend he builds
+              REST APIs and microservices with ASP.NET Core, C#, Node.js and Express. For data he uses SQL Server, MongoDB, MySQL and
+              Firebase. He also builds AI tools with Python, PyTorch and FastAPI, including tinyLLM, a Transformer language model written
+              from scratch.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary><h3>What projects has Aman built?</h3></summary>
+            <p>Aman's featured projects include <a href="https://moneymanager-jade.vercel.app/" target="_blank" rel="noopener">Money Manager</a>,
+              a full-stack personal finance app (Angular 17, Node.js, MongoDB, JWT); <a href="https://mannllm.onrender.com" target="_blank" rel="noopener">tinyLLM</a>,
+              a character-level Transformer built with PyTorch and served with FastAPI; and an
+              <a href="https://hrms-pro-omega.vercel.app/" target="_blank" rel="noopener">HRMS portal</a> with role-based access control.
+              He has shipped 8+ live web apps in total, including a GenAI chatbot and an LMS portal.</p>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary><h3>Is Aman Rajbhar available for hire, and how can I contact him?</h3></summary>
+            <p>Yes. Aman is open to Forward Deployed Engineer and full-stack engineering roles. You can email him at
+              <a href="mailto:amanrajbhar311@gmail.com">amanrajbhar311@gmail.com</a>, connect on
+              <a href="https://www.linkedin.com/in/amnn-rajbhar" target="_blank" rel="noopener">LinkedIn</a>, see his code on
+              <a href="https://github.com/amnnrajbhar" target="_blank" rel="noopener">GitHub</a>, or
+              <a href="https://drive.google.com/file/d/1yLZnWEKSUL2MvBb5p_VzoII4HDW1Rpnn/view?usp=sharing" target="_blank" rel="noopener">view his resume</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="section contact">
       <div class="container">
@@ -468,7 +521,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p><span class="c-com">/*</span> designed &amp; built by Aman Rajbhar · Mumbai, IN · <span id="year"></span> <span class="c-com">*/</span></p>
+      <p><span class="c-com">/*</span> designed &amp; built by Aman Rajbhar · Mumbai, IN · last updated <time datetime="2026-11-14">14 Nov 2026</time> <span class="c-com">*/</span></p>
       <a href="#hero" class="link-arrow">back to top <i class="fas fa-arrow-up"></i></a>
     </div>
   </footer>
@@ -491,9 +544,16 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-  <script src="js/data.js?v=4.5" defer></script>
-  <script src="js/app.js?v=4.5" defer></script>
-  <script src="js/animations.js?v=4.5" defer></script>
-  <script type="module" src="js/three-scene.js?v=4.5"></script>
+  <script src="js/data.js?v=4.6" defer></script>
+  <script src="js/app.js?v=4.6" defer></script>
+  <script src="js/animations.js?v=4.6" defer></script>
+  <script>
+    // Load the decorative 3D scene only after the page is usable (keeps LCP/INP fast)
+    addEventListener("load", function () {
+      if (navigator.connection && navigator.connection.saveData) return;
+      var go = function () { var s = document.createElement("script"); s.type = "module"; s.src = "js/three-scene.js?v=4.6"; document.body.appendChild(s); };
+      setTimeout(function () { "requestIdleCallback" in window ? requestIdleCallback(go, { timeout: 2000 }) : go(); }, 2500);
+    });
+  </script>
 </body>
 </html>
