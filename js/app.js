@@ -444,7 +444,7 @@
       skills: () => SKILLS.forEach((c) => print(`<span class="t-cyan">${esc(c.category.padEnd(15))}</span>${esc(c.items.join(" · "))}`)),
       contact: () => { print(`email     ${link("mailto:" + PERSONAL.email, PERSONAL.email)}`); print(`linkedin  ${link(PERSONAL.linkedin)}`); print(`github    ${link(PERSONAL.github)}`); print(`location  ${esc(PERSONAL.location)}`); },
       email: () => { copyEmail(); print(`copied <span class="t-ok">${esc(PERSONAL.email)}</span> to clipboard ✔`); },
-      resume: () => { print(`opening ${link(PERSONAL.resumeUrl, "resume (Google Drive)")} …`); window.open(PERSONAL.resumeUrl, "_blank", "noopener"); },
+      resume: () => { print(`opening ${link(PERSONAL.resumeUrl, "resume folder (Google Drive)")} …`); window.open(PERSONAL.resumeUrl, "_blank", "noopener"); },
       github: () => { print(`opening ${link(PERSONAL.github)}`); window.open(PERSONAL.github, "_blank", "noopener"); },
       linkedin: () => { print(`opening ${link(PERSONAL.linkedin)}`); window.open(PERSONAL.linkedin, "_blank", "noopener"); },
       date: () => print(new Date().toString()),

@@ -13,7 +13,7 @@ const PERSONAL = {
   location: "Mumbai, India",
   linkedin: "https://www.linkedin.com/in/amnn-rajbhar",
   github: "https://github.com/amnnrajbhar",
-  resumeUrl: "https://drive.google.com/file/d/1yLZnWEKSUL2MvBb5p_VzoII4HDW1Rpnn/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/drive/folders/1EIEZDn1Kk_gL3GRee3aXXvKifM1ekxce?usp=sharing",
   portfolioUrl: "https://amnnrajbhar.github.io/info/",
   education: "B.Sc — University of Mumbai",
   availability: "Open to Forward Deployed & Full Stack roles",

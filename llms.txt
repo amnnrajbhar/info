@@ -5,7 +5,7 @@
 ## Profile
 
 - [Portfolio](https://amnnrajbhar.github.io/info/): projects, experience, skills and contact
-- [Resume (PDF)](https://drive.google.com/file/d/1yLZnWEKSUL2MvBb5p_VzoII4HDW1Rpnn/view?usp=sharing): full CV
+- [Resumes (Google Drive folder)](https://drive.google.com/drive/folders/1EIEZDn1Kk_gL3GRee3aXXvKifM1ekxce?usp=sharing): CV versions (PDF)
 - [LinkedIn](https://www.linkedin.com/in/amnn-rajbhar): professional profile
 - [GitHub](https://github.com/amnnrajbhar): source code
 
